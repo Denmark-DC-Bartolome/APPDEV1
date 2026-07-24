@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
+
 
 function UserProfileCard({ user }) {
   const [messageCount, setMessageCount] = useState(0);
+
+  const [isFavorited, setIsFavorited] = useState(false);
 
   function handleSendMessage() {
     setMessageCount(messageCount + 1);
@@ -11,10 +14,14 @@ function UserProfileCard({ user }) {
     setMessageCount(0);
   }
 
+  function handleToggleFavorite() {
+    setIsFavorited(prev => !prev);
+  }
+
   return (
     <>
       <div className="profile-card">
-        <img src={user.avatarUrl} />
+       <img src={user.avatarUrl}/>
 
         <h2>{user.name}</h2>
 
@@ -23,20 +30,32 @@ function UserProfileCard({ user }) {
 
         <h3>Skills</h3>
         <ul>
-          {user.skills.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
+          {user.skills.map(skill => (
+           <li key={skill}>{skill}</li>
+         ))}
+       </ul>
 
-        <div style={{ color: "blue", fontWeight: "bold" }}>
-          Messages sent: {messageCount}
-        </div>
+       <div style={{color: 'blue', fontWeight: 'bold'}}>
+         Messages sent: {messageCount}
+       </div>
 
-        {user.isOnline ? <span>🟢 Online</span> : <span>⚪ Offline</span>}
+        {user.isOnline ? (<span>🟢 Online</span>) : ( <span>⚪ Offline</span>)}
 
-        <button onClick={handleSendMessage}>Send Message</button>
-        <button onClick={handleReset}>Reset</button>
-      </div>
+        {user.isOnline &&  (
+          <button onClick={handleToggleFavorite}>
+            {isFavorited ?  '☆ Favorite' : '★ Favorited'}
+          </button>
+        )}
+
+
+       <button onClick={handleSendMessage}>Send Message</button>
+       <button onClick={handleReset}>Reset</button>
+
+
+
+
+
+     </div>
       <p className="footer">Card last updated: {user.lastUpdated}</p>
     </>
   );
