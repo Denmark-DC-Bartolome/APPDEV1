@@ -34,15 +34,29 @@ export default function ShopApp() {
     setCartCount(cartCount + 1);
   }
 
+  function handleRemoveOne() {
+    if (cartCount > 0) {
+      setCartCount(cartCount - 1);
+    }
+  }
+
   return (
     <div className="shop">
       <h1>Mini Fruit & Veg Stand</h1>
 
-      <p>
-        {cartCount === 0
-          ? 'Cart is empty'
-          : `${cartCount} items in cart`}
-      </p>
+      <div className="cart-status">
+        <p>
+          {cartCount === 0
+            ? 'Cart is empty'
+            : `${cartCount} items in cart`}
+        </p>
+
+        {cartCount > 0 && (
+          <button onClick={handleRemoveOne}>
+            Remove one
+          </button>
+        )}
+      </div>
 
       <div className="product-list">
         {products.map((product) => (
