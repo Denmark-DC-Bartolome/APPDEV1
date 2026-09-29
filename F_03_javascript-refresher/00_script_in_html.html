@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning the fundamentals of JavaScript</title>
+</head>
+
+<body>
+    <h1>Inline  vs. External JavaScript, and introducing type="module"</h1>
+
+<!--Remember: HTML first, JavaScript after it. -->
+
+<!-- Internal JavaScript : Putting JavaScript directly inside the HTML file, it exist directly inside : -->
+    <script>
+        console.log("This is Inline JavaScript");
+    </script>
+
+<!-- JavaScript is stored in another file : -->
+    <script type="module" src="app.js"></script>
+<!-- This means, Browser, load JavaScript from app.js -->
+ <!-- Allows modern module features such as: import and expoer -->
+
+</body>
+</html>
