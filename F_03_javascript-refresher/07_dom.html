@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My DOM Practice</title>
+</head>
+<body>
+
+    <h1>DOM Practice</h1>
+
+    <button id="changeColorBtn">Change Background</button>
+    <!-- id="" gives the element a unique name that JavaScript can use to find it. -->
+
+    <p id="message">Wait 2 seconds and this message will change.</p>
+
+    <script>
+        const button = document.getElementById("changeColorBtn");
+        // --- document --- refers to the current webpage.
+
+        button.addEventListener("click", () => {
+            // When the user clicks the button, run this code. thr "click" part is the event we're listening for
+            const color = prompt("Enter a background color:");
+            //prompt() to ask the user what color the background should be.
+            document.body.style.backgroundColor = color;
+            // .style = means access thge css styles
+         });
+
+        const message = document.getElementById("message");
+
+        setTimeout(() => {
+            //setTimeout() runs code after a delay.
+
+            message.textContent = "The page updated this message after 2 seconds!";
+        }, 2000); 
+            // wait 2 seconds  then run the code.
+    </script>
+
+</body>
+</html>
