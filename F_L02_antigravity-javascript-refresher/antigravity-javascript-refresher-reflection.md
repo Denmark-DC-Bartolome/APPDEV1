@@ -75,3 +75,16 @@ Mas naintindihan ko ang debugging nung explanation muna ang hiningi ko bago fix.
 **Reflection**
 
 Humingi ako ng browser steps sa Antigravity para ma-check ko mismo kung gumagana ang page.
+
+## Part 4 — Modern Features
+
+### 08_essential_features.js
+
+**Prompt**
+
+> Explain map, destructuring, and spread in @08_essential_features.js. Check the results and give simple React connections.
+
+**Reflection**
+
+Mas madaling sundan ang sagot nung pina-explain ko ang examples gamit ang code na nasa file ko.
+
