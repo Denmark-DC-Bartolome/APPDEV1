@@ -21,3 +21,13 @@ Mas naging clear ang response ng Antigravity nung specific file ang tinarget ko.
 **Reflection**
 
 Helpful ang pagbigay ng predictions para ma-check ko rin ang explanation ng Antigravity.
+
+### 03_functions.js
+
+**Prompt**
+
+> Check greet, square, and calculator in @03_functions.js. Explain how their inputs become returned values, then verify my expected results.
+
+**Reflection**
+
+Mas madaling sundan ang explanation nung pinangalanan ko ang functions sa prompt.
