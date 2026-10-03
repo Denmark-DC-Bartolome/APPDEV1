@@ -63,3 +63,15 @@ Nakatulong ang step-by-step prompt para masundan ko ang response ng Antigravity.
 **Reflection**
 
 Mas naintindihan ko ang debugging nung explanation muna ang hiningi ko bago fix.
+
+## Part 3 — DOM
+
+### 07_dom.html
+
+**Prompt**
+
+> Give me browser test steps for @07_dom.html. Explain the immediate and delayed changes, then show a small React version.
+
+**Reflection**
+
+Humingi ako ng browser steps sa Antigravity para ma-check ko mismo kung gumagana ang page.
