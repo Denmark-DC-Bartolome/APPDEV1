@@ -43,3 +43,14 @@ Mas madaling sundan ang explanation nung pinangalanan ko ang functions sa prompt
 **Reflection**
 
 Mas useful pala ang pagtatanong ng “why” kaysa humingi agad ng bagong code.
+
+### 05_arrays.js
+
+**Prompt**
+
+> Trace @05_arrays.js from its starting array through push, shift, iteration, and map. Show which values change and connect map to React lists.
+
+**Reflection**
+
+Nakatulong ang step-by-step prompt para masundan ko ang response ng Antigravity.
+
