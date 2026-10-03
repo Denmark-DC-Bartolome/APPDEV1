@@ -54,3 +54,12 @@ Mas useful pala ang pagtatanong ng “why” kaysa humingi agad ng bagong code.
 
 Nakatulong ang step-by-step prompt para masundan ko ang response ng Antigravity.
 
+### 06_control_structures.js
+
+**Prompt**
+
+> Investigate the grade checker in @06_control_structures.js. Reproduce its behavior, explain condition ordering, propose a minimal fix if needed, and check the loops.
+
+**Reflection**
+
+Mas naintindihan ko ang debugging nung explanation muna ang hiningi ko bago fix.
