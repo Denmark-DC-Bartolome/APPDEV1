@@ -11,3 +11,13 @@
 **Reflection**
 
 Mas naging clear ang response ng Antigravity nung specific file ang tinarget ko.
+
+### 02_variables.js
+
+**Prompt**
+
+> Using @02_variables.js, help me distinguish types, arithmetic, and loose versus strict equality. Let me explain my predictions before checking them.
+
+**Reflection**
+
+Helpful ang pagbigay ng predictions para ma-check ko rin ang explanation ng Antigravity.
