@@ -31,3 +31,15 @@ Helpful ang pagbigay ng predictions para ma-check ko rin ang explanation ng Anti
 **Reflection**
 
 Mas madaling sundan ang explanation nung pinangalanan ko ang functions sa prompt.
+
+## Part 2 — Objects, Arrays, and Control Structures
+
+### 04_objects.js
+
+**Prompt**
+
+> Why does introduce() use this in @04_objects.js? Check aboutMe and explain whether replacing its method with an arrow would preserve behavior.
+
+**Reflection**
+
+Mas useful pala ang pagtatanong ng “why” kaysa humingi agad ng bagong code.
