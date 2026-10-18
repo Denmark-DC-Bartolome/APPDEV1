@@ -113,3 +113,126 @@
     font-weight: var(--font-weight-bold);
     text-decoration: none;
 }
+
+/* Tablets and smaller desktop windows retain the two-panel layout. */
+@media (max-width: 1200px) {
+    .login {
+        width: 94vw;
+        height: auto;
+        min-height: 82vh;
+    }
+
+    .left {
+        width: 38%;
+        padding: var(--space-8) var(--space-6);
+    }
+
+    .tagline {
+        font-size: clamp(var(--font-size-tagline-mobile), 2.4vw, var(--font-size-tagline-tablet));
+    }
+
+    .logo {
+        width: min(100%, 180px);
+        height: auto;
+        margin: var(--space-8) 0;
+    }
+
+    .link {
+        margin-top: auto;
+        font-size: var(--font-size-caption);
+        letter-spacing: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .right {
+        min-width: 0;
+        padding: var(--space-8) var(--space-6);
+    }
+
+    .form {
+        width: 100%;
+        max-width: 575px;
+    }
+
+    .form h2 {
+        margin-bottom: var(--space-8);
+    }
+}
+
+/* Let forms determine the height when a wide window is short. */
+@media (min-width: 768px) and (max-height: 800px) {
+    .login {
+        height: auto;
+        min-height: 82vh;
+    }
+
+    .left {
+        padding-top: var(--space-8);
+    }
+
+    .right {
+        padding-top: var(--space-8);
+        padding-bottom: var(--space-8);
+    }
+}
+
+/* Phones: branding above the form, with document scrolling. */
+@media (max-width: 767px) {
+    .login {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .left {
+        width: 100%;
+        padding: var(--space-6);
+        gap: var(--space-4);
+    }
+
+    .tagline {
+        align-self: center;
+        font-size: var(--font-size-tagline-mobile);
+        text-align: center;
+    }
+
+    .logo {
+        width: 96px;
+        height: auto;
+        margin: 0;
+    }
+
+    .link {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        padding: var(--space-8) var(--space-6);
+        border-radius: var(--radius-panel-mobile) var(--radius-panel-mobile) 0 0;
+    }
+
+    .form h2 {
+        margin-bottom: var(--space-6);
+    }
+
+    .form input {
+        margin-bottom: var(--space-6);
+    }
+
+    .signup {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .left {
+        padding: var(--space-6) var(--space-4);
+    }
+
+    .right {
+        padding: var(--space-7) var(--space-4);
+    }
+}

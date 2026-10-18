@@ -25,4 +25,12 @@
   /* Corners */
   --radius-button: 8px;
   --radius-panel: 60px;
+
+  /* Responsive layouts */
+  --space-3: 12px;
+  --space-8: 32px;
+  --font-size-tagline-tablet: 28px;
+  --font-size-tagline-mobile: 24px;
+  --font-size-caption: 14px;
+  --radius-panel-mobile: 24px;
 }

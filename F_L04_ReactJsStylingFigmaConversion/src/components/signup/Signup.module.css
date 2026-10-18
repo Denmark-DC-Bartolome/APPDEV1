@@ -113,3 +113,30 @@
 .loginPrompt a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1200px) {
+  .form {
+    width: 100%;
+    max-width: 575px;
+  }
+
+  .socialOptions {
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 767px) {
+  .form h2 {
+    margin-bottom: var(--space-6);
+  }
+
+  .socialButton {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialOptions {
+    flex-direction: column;
+  }
+}
