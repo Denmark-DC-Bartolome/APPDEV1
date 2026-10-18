@@ -1,0 +1,28 @@
+:root {
+  /* Colors */
+  --color-primary: #5b86e5;
+  --color-panel: #a9c0f0;
+  --color-white: #fff;
+  --color-text: #000;
+  --color-border: #333;
+  --color-placeholder: #9a9a9a;
+
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 28px;
+  --font-size-tagline: 32px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing: 1px;
+
+  /* Spacing */
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-7: 28px;
+
+  /* Corners */
+  --radius-button: 8px;
+  --radius-panel: 60px;
+}
