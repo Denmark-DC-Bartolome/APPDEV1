@@ -1,0 +1,15 @@
+/* Design tokens and font shared across the app. */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #5f7c8d;
+  --color-heading: #7a999c;
+  --color-secondary: #567281;
+  --color-muted: rgba(95, 124, 141, 0.55);
+  --color-tab-muted: rgba(95, 124, 141, 0.39);
+  --color-button: #4b687a;
+  --color-background: #ffffff;
+  --color-page-background: #f4f6f7;
+
+  --font-family-primary: "Istok Web", sans-serif;
+}
